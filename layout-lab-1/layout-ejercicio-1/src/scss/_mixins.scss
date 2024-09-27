@@ -1,0 +1,38 @@
+// Mixin para generar una paleta de colores a partir de un color base
+@mixin generateColorPalette($base-color) {
+  .darken-4 {
+    background-color: darken($base-color, 40%);
+  }
+
+  .darken-3 {
+    background-color: darken($base-color, 30%);
+  }
+
+  .darken-2 {
+    background-color: darken($base-color, 20%);
+  }
+
+  .darken-1 {
+    background-color: darken($base-color, 10%);
+  }
+
+  .base-color {
+    background-color: $base-color;
+  }
+
+  .lighten-1 {
+    background-color: lighten($base-color, 10%);
+  }
+
+  .lighten-2 {
+    background-color: lighten($base-color, 20%);
+  }
+
+  .lighten-3 {
+    background-color: lighten($base-color, 30%);
+  }
+
+  .lighten-4 {
+    background-color: lighten($base-color, 40%);
+  }
+}

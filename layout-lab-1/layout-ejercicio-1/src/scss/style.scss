@@ -1,0 +1,65 @@
+$base-color: #3498db; // Variable color base
+
+// Colores más oscuros
+.darken-4 {
+  background-color: darken($base-color, 40%);
+}
+
+.darken-3 {
+  background-color: darken($base-color, 30%);
+}
+
+.darken-2 {
+  background-color: darken($base-color, 20%);
+}
+
+.darken-1 {
+  background-color: darken($base-color, 10%);
+}
+
+// Color base
+.base-color {
+  background-color: $base-color;
+}
+
+// Colores más claros
+.lighten-1 {
+  background-color: lighten($base-color, 10%);
+}
+
+.lighten-2 {
+  background-color: lighten($base-color, 20%);
+}
+
+.lighten-3 {
+  background-color: lighten($base-color, 30%);
+}
+
+.lighten-4 {
+  background-color: lighten($base-color, 40%);
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+// Estilos generales para los cuadros
+
+.container-1 {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

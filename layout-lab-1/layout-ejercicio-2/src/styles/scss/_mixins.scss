@@ -1,0 +1,46 @@
+// Mixin para establecer los colores del tema
+@mixin theme-colors($base-color, $important-color, $warning-color) {
+  .base {
+    background-color: $base-color;
+  }
+  .important {
+    background-color: $important-color;
+  }
+  .warning {
+    background-color: $warning-color;
+  }
+}
+
+// Mixin para establecer las fuentes del tema
+@mixin theme-fonts(
+  $principal-font,
+  $secondary-font,
+  $principal-weight: normal,
+  $secondary-weight: normal
+) {
+  .principal-font {
+    font-family: $principal-font;
+    font-weight: $principal-weight;
+  }
+  .secondary-font {
+    font-family: $secondary-font;
+    font-weight: $secondary-weight;
+  }
+}
+
+// Mixin para establecer la sombra de la caja
+@mixin theme-box($box-shadow) {
+  .box-with-shadow {
+    box-shadow: $box-shadow;
+  }
+}
+
+// Mixin para establecer el borde radius
+@mixin apply-border-radius($border-radius) {
+  .base,
+  .important,
+  .warning,
+  .box-with-shadow {
+    border-radius: $border-radius;
+  }
+}

@@ -1,0 +1,16 @@
+@use 'mixins';
+
+$base-color: #0000ff;
+$important-color: #00008b;
+$warning-color: #00ffff;
+$principal-font: 'Helvetica', sans-serif;
+$secondary-font: 'Georgia', serif;
+$border-radius: 10px;
+$box-shadow: 5px 5px 10px 0;
+
+.theme {
+  @include mixins.theme-colors($base-color, $important-color, $warning-color);
+  @include mixins.theme-fonts($principal-font, $secondary-font, normal, normal);
+  @include mixins.theme-box($box-shadow);
+  @include mixins.apply-border-radius($border-radius);
+}

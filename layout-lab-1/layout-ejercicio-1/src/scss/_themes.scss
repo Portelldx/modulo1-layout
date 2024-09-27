@@ -1,0 +1,15 @@
+@use 'variables';
+@use 'mixins';
+
+// Aplicación de la paleta de colores para cada tema
+.theme1 {
+  @include mixins.generateColorPalette(variables.$base-color-theme1);
+}
+
+.theme2 {
+  @include mixins.generateColorPalette(variables.$base-color-theme2);
+}
+
+.theme3 {
+  @include mixins.generateColorPalette(variables.$base-color-theme3);
+}

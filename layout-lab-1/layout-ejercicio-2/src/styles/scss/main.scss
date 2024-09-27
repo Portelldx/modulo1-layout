@@ -1,0 +1,28 @@
+@use 'theme-a'; // Cambia a 'themeB' para el otro tema
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif; // Esta fuente hace llorar al niño jesús
+  .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    .theme {
+      width: 150px;
+      font-weight: bold;
+
+      .base,
+      .important,
+      .warning,
+      .box-with-shadow {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

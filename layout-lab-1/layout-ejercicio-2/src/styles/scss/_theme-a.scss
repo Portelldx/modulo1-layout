@@ -1,0 +1,15 @@
+@use 'mixins';
+
+$base-color: #ff0000;
+$important-color: #8b0000;
+$warning-color: #ffcccc;
+$principal-font: 'Arial', sans-serif;
+$secondary-font: 'Courier New', monospace;
+$border-radius: 0px;
+$box-shadow: -3px 3px 5px 0;
+
+.theme {
+  @include mixins.theme-colors($base-color, $important-color, $warning-color);
+  @include mixins.theme-fonts($principal-font, $secondary-font, normal, bold);
+  @include mixins.theme-box($box-shadow);
+}
